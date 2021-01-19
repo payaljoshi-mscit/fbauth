@@ -18,8 +18,8 @@ app.use(passport.session());
 passport.use(new facebookStrategy({
 
     // pull in our app id and secret from our auth.js file
-    clientID        : "2859125264369631",
-    clientSecret    : "81902d238efa820d813bc377194542fd",
+    clientID        : "",
+    clientSecret    : "",
     callbackURL     : "http://localhost:8000/facebook/callback",
     profileFields: ['id', 'displayName', 'name', 'gender', 'picture.type(large)','email']
 
